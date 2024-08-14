@@ -1,0 +1,124 @@
+body {
+    background: #000;
+}
+
+.container {
+    height: 200px;
+    width: 350px;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 10px 20px #dbdbdb;
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+}
+
+.palette {
+    display: flex;
+    height: 86%;
+    width: 100%;
+}
+
+.color {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: flex 0.1s linear;
+}
+
+.color span {
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+.color:nth-child(1) {
+    background: #264653;
+}
+
+.color:nth-child(2) {
+    background: #2a9d8f;
+}
+
+.color:nth-child(3) {
+    background: #e9c46a;
+}
+
+.color:nth-child(4) {
+    background: #f4a261;
+}
+
+.color:nth-child(5) {
+    background: #e76f51;
+}
+
+.color:hover {
+    flex: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color:hover span {
+    opacity: 1;
+}
+
+#stats {
+    height: 14%;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    color: #bebebe;
+}
+
+#stats svg {
+    fill: #bebebe;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+/* card */
+
+.card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    border-radius: 0;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
